@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Realy Board</title>
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/text.css">
+	<link rel="stylesheet" type="text/css" href="css/inputs.css">
+	<script type="text/javascript" src="script/jquery.js"></script>
+</head>
+
+<header>
+	<div id="top"></div>
+</header>
+<body>
+	<div id="flex-container">
+		<div id="menu">
+			<h2>Menu</h2>
+			<input type="button" id="relays" name="Relays" value="Relays" onclick="$('#main').load('relays.htm')">
+			<input type="button" id="timer" name="Timer" value="Timer" onclick="$('#main').load('timer.htm')">
+			<input type="button" id="temp" name="Temperature" value="Temperature" onclick="$('#main').load('temperature.htm')">
+			<h3>Settings</h3>
+			<input type="button" id="user" name="UserSettings" value="User Account" onclick="$('#main').load('user.htm')">
+			<input type="button" id="network" name="NetworkSetings" value="Network" onclick="$('#main').load('network.htm')">
+			<input type="button" id="dateTime" name="DateTime" value="Date And Time" onclick="$('#main').load('dateTime.htm')">
+		</div>
+		<div id="main"></div>
+	</div>
+</body>
+<footer>
+	&copy 2018: By Brenton Holloway
+</footer>
+<script type="text/javascript">
+	$(function(){
+		$("#top").load("top.htm");
+		$("#main").load("welcome.htm");
+	})
+
+</script>
+</html>
